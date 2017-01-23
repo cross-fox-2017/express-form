@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 router.get('/users', function(req, res, next) {
   res.render('users',{
     hasil:req.query.say,
-    input:req.query.say
+    input:req.query.say.toLowerCase()
   });
 });
 
