@@ -12,6 +12,12 @@ router.get('/users', function(req, res, next) {
   });
 });
 
+router.post('/users', function(req, res, next) {
+  res.render('users',{
+    hasil:req.body.say
+  });
+});
+
 
 
 module.exports = router;
