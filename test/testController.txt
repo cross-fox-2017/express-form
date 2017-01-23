@@ -1,0 +1,3 @@
+get pakai postman dengan method get berisi param dengan key value
+
+post pakai postman dengan method post berisi body dgn url-encoded
