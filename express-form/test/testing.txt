@@ -1,0 +1,12 @@
+Controller Testing
+
+Berdasarkan hasil eksperimen:
+Get: berisi param untuk diinputkan value-nya
+Contoh:
+router.get('/', function(req, res, next) {
+  if(temp === undefined) {
+    res.render('index', { title: 'HACKTIV8 FORM', answer: req.query.say});
+  } else {
+    res.render('index', { title: 'HACKTIV8 FORM', answer: req.query.say, result: req.query.say.toLowerCase()});
+  }
+});
