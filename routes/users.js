@@ -3,9 +3,9 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  if(req.query && req.query.result){
+  if(req.query && req.query.say){
 
-    res.send("say = "+ req.query.result)
+    res.send("say = "+ req.query.say)
   }else{
     res.render('form')
   }
