@@ -8,13 +8,15 @@ router.get('/', function(req, res, next) {
 
 router.get('/users', function(req, res, next) {
   res.render('users',{
-    hasil:req.query.say
+    hasil:req.query.say,
+    input:req.query.say
   });
 });
 
 router.post('/users', function(req, res, next) {
   res.render('users',{
-    hasil:req.body.say
+    input:req.body.say,
+    hasil:req.body.say.toLowerCase()
   });
 });
 
